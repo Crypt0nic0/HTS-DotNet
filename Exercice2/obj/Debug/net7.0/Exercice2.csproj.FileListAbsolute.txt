@@ -1,0 +1,15 @@
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/bin/Debug/net7.0/Exercice2
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/bin/Debug/net7.0/Exercice2.deps.json
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/bin/Debug/net7.0/Exercice2.runtimeconfig.json
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/bin/Debug/net7.0/Exercice2.dll
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/bin/Debug/net7.0/Exercice2.pdb
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.csproj.AssemblyReference.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.AssemblyInfoInputs.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.AssemblyInfo.cs
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.csproj.CoreCompileInputs.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.dll
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/refint/Exercice2.dll
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.pdb
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/Exercice2.genruntimeconfig.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice2/obj/Debug/net7.0/ref/Exercice2.dll
