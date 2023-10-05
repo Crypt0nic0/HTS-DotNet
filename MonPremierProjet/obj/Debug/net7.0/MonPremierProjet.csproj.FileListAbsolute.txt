@@ -1,0 +1,15 @@
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/bin/Debug/net7.0/MonPremierProjet
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/bin/Debug/net7.0/MonPremierProjet.deps.json
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/bin/Debug/net7.0/MonPremierProjet.runtimeconfig.json
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/bin/Debug/net7.0/MonPremierProjet.dll
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/bin/Debug/net7.0/MonPremierProjet.pdb
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.csproj.AssemblyReference.cache
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.AssemblyInfoInputs.cache
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.AssemblyInfo.cs
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.csproj.CoreCompileInputs.cache
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.dll
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/refint/MonPremierProjet.dll
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.pdb
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/MonPremierProjet.genruntimeconfig.cache
+/Users/ngdev/NGDEV/HTSDotNet/MonPremierProjet/obj/Debug/net7.0/ref/MonPremierProjet.dll
