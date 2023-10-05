@@ -1,0 +1,15 @@
+/Users/ngdev/NGDEV/Exercice1/bin/Debug/net7.0/Exercice1
+/Users/ngdev/NGDEV/Exercice1/bin/Debug/net7.0/Exercice1.deps.json
+/Users/ngdev/NGDEV/Exercice1/bin/Debug/net7.0/Exercice1.runtimeconfig.json
+/Users/ngdev/NGDEV/Exercice1/bin/Debug/net7.0/Exercice1.dll
+/Users/ngdev/NGDEV/Exercice1/bin/Debug/net7.0/Exercice1.pdb
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.csproj.AssemblyReference.cache
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.AssemblyInfoInputs.cache
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.AssemblyInfo.cs
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.csproj.CoreCompileInputs.cache
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.dll
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/refint/Exercice1.dll
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.pdb
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/Exercice1.genruntimeconfig.cache
+/Users/ngdev/NGDEV/Exercice1/obj/Debug/net7.0/ref/Exercice1.dll
