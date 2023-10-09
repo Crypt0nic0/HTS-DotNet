@@ -1,6 +1,9 @@
 ﻿//============== JEU NOMBRE MYSTERE ==============//
 
+const int nbMin = 1;
+const int nbMax = 10;
 const int nbmyst = 5;
+
 bool trouv = false;
 string indic = "";
 
@@ -21,8 +24,20 @@ while (!trouv)
         Console.Write($" {n}");
     }
     Console.WriteLine("");
-    Console.WriteLine("Saisir un nombre : ");
-    int nb = int.Parse(Console.ReadLine());
+    int nb = 0;
+    while (nb < nbMin || nb > nbMax)
+    {
+        Console.WriteLine($"Saisir un nombre entre {nbMin} et {nbMax} : ");
+        try
+        {
+            nb = int.Parse(Console.ReadLine());
+        }
+        catch
+        {
+            nb = 0;
+        }
+    }
+
     histoNb.Add(nb);
 
     if (nb == nbmyst)
