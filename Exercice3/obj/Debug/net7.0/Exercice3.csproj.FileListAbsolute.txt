@@ -1,0 +1,15 @@
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/bin/Debug/net7.0/Exercice3
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/bin/Debug/net7.0/Exercice3.deps.json
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/bin/Debug/net7.0/Exercice3.runtimeconfig.json
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/bin/Debug/net7.0/Exercice3.dll
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/bin/Debug/net7.0/Exercice3.pdb
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.csproj.AssemblyReference.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.AssemblyInfoInputs.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.AssemblyInfo.cs
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.csproj.CoreCompileInputs.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.dll
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/refint/Exercice3.dll
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.pdb
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/Exercice3.genruntimeconfig.cache
+/Users/ngdev/NGDEV/HTSDotNet/Exercice3/obj/Debug/net7.0/ref/Exercice3.dll
