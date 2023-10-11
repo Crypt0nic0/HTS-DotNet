@@ -4,30 +4,33 @@ namespace TPCalculatrice
 {
     public class Calculatrice
     {
-        public int Addition(int a, int b)
+        public int OperandeGauche { get; set; }
+        public int OperandeDroite { get; set; }
+        public int Resultat { get; set; }
+
+        public void Addition()
         {
-            return a + b;
+            Resultat = OperandeGauche + OperandeDroite;
         }
 
-        public int Soustraction(int a, int b)
+        public void Soustraction()
         {
-            return a - b;
+            Resultat = OperandeGauche - OperandeDroite;
         }
 
-        public int Multiplication(int a, int b)
+        public void Multiplication()
         {
-            return a * b;
+            Resultat = OperandeGauche * OperandeDroite;
         }
 
-        public int Division(int a, int b)
+        public void Division()
         {
-            int resultat = (b == 0) ? 0 : a / b;
-            return resultat;
+            Resultat = (OperandeDroite == 0) ? 0 : OperandeGauche / OperandeDroite;
         }
 
-        public int Modulo(int a, int b)
+        public void Modulo()
         {
-            return a % b;
+            Resultat = OperandeGauche % OperandeDroite;
         }
     }
 }

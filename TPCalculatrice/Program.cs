@@ -4,34 +4,32 @@ Console.WriteLine("Salut et bienvenu dans le TP Calculatrice");
 
 Calculatrice Calc = new Calculatrice();
 
-int res = 0;
-
 Console.WriteLine("Saisir NB1 : ");
-int nb1 = int.Parse(Console.ReadLine());
+Calc.OperandeGauche = int.Parse(Console.ReadLine());
 Console.WriteLine("Saisir NB2 : ");
-int nb2 = int.Parse(Console.ReadLine());
+Calc.OperandeDroite = int.Parse(Console.ReadLine());
 Console.WriteLine("Saisir un opérateur entre + - * / %");
 string op = Console.ReadLine();
 
 switch (op)
 {
     case "+":
-        res = Calc.Addition(nb1, nb2);
+        Calc.Addition();
         break;
     case "-":
-        res = Calc.Soustraction(nb1, nb2);
+        Calc.Soustraction();
         break;
     case "*":
-        res = Calc.Multiplication(nb1, nb2);
+        Calc.Multiplication();
         break;
     case "/":
-        res = Calc.Division(nb1, nb2);
+        Calc.Division();
         break;
     case "%":
-        res = Calc.Modulo(nb1, nb2);
+        Calc.Modulo();
         break;
     default:
         break;
 }
 
-Console.WriteLine($"Résultat de l'opération {nb1} {op} {nb2} = {res}");
+Console.WriteLine($"Résultat de l'opération {Calc.OperandeGauche} {op} {Calc.OperandeDroite} = {Calc.Resultat}");
