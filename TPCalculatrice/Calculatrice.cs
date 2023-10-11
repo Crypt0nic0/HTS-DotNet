@@ -1,4 +1,5 @@
 using System;
+using System.Reflection.Emit;
 
 namespace TPCalculatrice
 {
@@ -6,6 +7,11 @@ namespace TPCalculatrice
     {
         public int OperandeGauche { get; set; }
         public int OperandeDroite { get; set; }
+        public Calculatrice(int opg, int opd)
+        {
+            OperandeGauche = opg;
+            OperandeDroite = opd;
+        }
         public int Resultat { get; set; }
 
         public void Addition()

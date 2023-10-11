@@ -2,14 +2,15 @@
 
 Console.WriteLine("Salut et bienvenu dans le TP Calculatrice");
 
-Calculatrice Calc = new Calculatrice();
 
-Console.WriteLine("Saisir NB1 : ");
-Calc.OperandeGauche = int.Parse(Console.ReadLine());
-Console.WriteLine("Saisir NB2 : ");
-Calc.OperandeDroite = int.Parse(Console.ReadLine());
+Console.WriteLine("Saisir l'opérande gauche : ");
+int nb1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Saisir l'opérande droite : ");
+int nb2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Saisir un opérateur entre + - * / %");
 string op = Console.ReadLine();
+
+Calculatrice Calc = new Calculatrice(nb1, nb2);
 
 switch (op)
 {
