@@ -8,7 +8,7 @@ namespace TPCalculatrice.Operations
         {
         }
 
-        public void Execute()
+        public void Executer()
         {
             Resultat = OperandeGauche * OperandeDroite;
         }

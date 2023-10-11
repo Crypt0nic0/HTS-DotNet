@@ -1,42 +1,44 @@
 using System;
 using System.Reflection.Emit;
+using TPCalculatrice.Operations;
 
 namespace TPCalculatrice
 {
     public class Calculatrice
     {
-        public int OperandeGauche { get; set; }
-        public int OperandeDroite { get; set; }
-        public Calculatrice(int opg, int opd)
+        public Operation Operation { get; set; }
+        public Calculatrice(Operation uneop)
         {
-            OperandeGauche = opg;
-            OperandeDroite = opd;
-        }
-        public int Resultat { get; set; }
-
-        public void Addition()
-        {
-            Resultat = OperandeGauche + OperandeDroite;
+            Operation = uneop;
         }
 
-        public void Soustraction()
+        public void Executer()
         {
-            Resultat = OperandeGauche - OperandeDroite;
-        }
+            if (Operation is Addition a)
+            {
+                a.Executer();
+            }
+            else if (Operation is Soustraction s)
+            {
+                s.Executer();
+            }
+            else if (Operation is Multiplication mu)
+            {
+                mu.Executer();
+            }
+            else if (Operation is Division d)
+            {
+                d.Executer();
+            }
+            else if (Operation is Modulo mo)
+            {
+                mo.Executer();
+            }
+            else
+            {
+                Console.WriteLine("Opération non reconnue");
+            }
 
-        public void Multiplication()
-        {
-            Resultat = OperandeGauche * OperandeDroite;
-        }
-
-        public void Division()
-        {
-            Resultat = (OperandeDroite == 0) ? 0 : OperandeGauche / OperandeDroite;
-        }
-
-        public void Modulo()
-        {
-            Resultat = OperandeGauche % OperandeDroite;
         }
     }
 }
