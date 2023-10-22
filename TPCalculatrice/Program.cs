@@ -1,15 +1,32 @@
 ﻿using TPCalculatrice;
 using TPCalculatrice.Operations;
 
+int GetIntValue(int nb)
+{
+    Console.WriteLine($"Saisissez la valeur {nb} entière");
+    string? saisie = Console.ReadLine();
+    int resultat = 0;
+    if (saisie is not null)
+    {
+        try
+        {
+            resultat = int.Parse(saisie);
+        }
+        catch
+        {
+            resultat = 0;
+        }
+    }
+    return resultat;
+}
+
 Console.WriteLine("Salut et bienvenu dans le TP Calculatrice");
 
 
-Console.WriteLine("Saisir l'opérande gauche : ");
-int nb1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Saisir l'opérande droite : ");
-int nb2 = int.Parse(Console.ReadLine());
+int nb1 = GetIntValue(1);
+int nb2 = GetIntValue(2);
 Console.WriteLine("Saisir un opérateur entre + - * / %");
-string op = Console.ReadLine();
+string? op = Console.ReadLine();
 
 Operation operation;
 
