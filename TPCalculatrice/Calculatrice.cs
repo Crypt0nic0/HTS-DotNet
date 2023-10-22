@@ -6,7 +6,7 @@ namespace TPCalculatrice
 {
     public class Calculatrice
     {
-        public Operation Operation { get; set; }
+        public Operation Operation { get; }
         public Calculatrice(Operation uneop)
         {
             Operation = uneop;
