@@ -35,6 +35,10 @@ while (!trouv)
             {
                 nb = int.Parse(nbSaisi);
             }
+            else
+            {
+                nb = 0;
+            }
         }
         catch
         {
