@@ -10,7 +10,7 @@ string indic = "";
 List<int> histoNb = new List<int>();
 
 Console.WriteLine("Bonjour et bienvenu dans le jeu du Nombre Mystère, quel est votre nom ?");
-string nom = Console.ReadLine();
+string? nom = Console.ReadLine();
 
 Console.WriteLine($"Bienvenu {nom}");
 
@@ -30,7 +30,11 @@ while (!trouv)
         Console.WriteLine($"Saisir un nombre entre {nbMin} et {nbMax} : ");
         try
         {
-            nb = int.Parse(Console.ReadLine());
+            string? nbSaisi = Console.ReadLine();
+            if (nbSaisi is not null)
+            {
+                nb = int.Parse(nbSaisi);
+            }
         }
         catch
         {
