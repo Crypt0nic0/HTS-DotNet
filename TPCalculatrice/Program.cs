@@ -37,6 +37,8 @@ switch (op)
 {
     case "+":
         operation = new Addition(nb1, nb2);
+        Addition a2 = new Addition(nb1, nb2);
+        Console.WriteLine($"Additions égales ? {operation.Equals(a2)}");
         break;
     case "-":
         operation = new Soustraction(nb1, nb2);
