@@ -13,5 +13,10 @@ namespace TPCalculatrice.Operations
         {
             Resultat = (OperandeDroite == 0) ? 0 : OperandeGauche / OperandeDroite;
         }
+
+        public override string ToString()
+        {
+            return $"{OperandeGauche} - {OperandeDroite}";
+        }
     }
 }
