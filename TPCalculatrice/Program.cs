@@ -31,33 +31,24 @@ int nb2 = GetIntValue("deuxième");
 Console.WriteLine("Saisir un opérateur entre + - * / %");
 string? op = Console.ReadLine();
 
-Operation operation;
+Operation? operation;
 
 switch (op)
 {
-    case "+":
-        operation = new Addition(nb1, nb2);
-        Addition a2 = new Addition(nb1, nb2);
-        Console.WriteLine($"Additions égales ? {operation.Equals(a2)}");
-        break;
-    case "-":
-        operation = new Soustraction(nb1, nb2);
-        break;
-    case "*":
-        operation = new Multiplication(nb1, nb2);
-        break;
-    case "/":
-        operation = new Division(nb1, nb2);
-        break;
-    case "%":
-        operation = new Modulo(nb1, nb2);
-        break;
-    default:
-        operation = new Addition(nb1, nb2);
-        break;
+    case "+": operation = new Addition(nb1, nb2); break;
+    case "-": operation = new Soustraction(nb1, nb2); break;
+    case "*": operation = new Multiplication(nb1, nb2); break;
+    case "/": operation = new Division(nb1, nb2); break;
+    case "%": operation = new Modulo(nb1, nb2); break;
+    default: operation = null; break;
 }
-
-Calculatrice Calc = new Calculatrice(operation);
-Calc.Executer();
-
-Console.WriteLine($"Résultat de l'opération {Calc.Operation.ToString()} = {Calc.Operation.Resultat}");
+if (operation is not null)
+{
+    Calculatrice Calc = new Calculatrice(operation);
+    Calc.Executer();
+    Console.WriteLine($"Résultat de l'opération {Calc.Operation.ToString()} = {Calc.Operation.Resultat}");
+}
+else
+{
+    Console.WriteLine($"L'opérateur {op} n'est pas reconnu");
+}
