@@ -31,17 +31,18 @@ int nb2 = GetIntValue("deuxième");
 Console.WriteLine("Saisir un opérateur entre + - * / %");
 string? op = Console.ReadLine();
 
-Operation? operation;
-
-switch (op)
+Operation? operation = op switch
 {
-    case "+": operation = new Addition(nb1, nb2); break;
-    case "-": operation = new Soustraction(nb1, nb2); break;
-    case "*": operation = new Multiplication(nb1, nb2); break;
-    case "/": operation = new Division(nb1, nb2); break;
-    case "%": operation = new Modulo(nb1, nb2); break;
-    default: operation = null; break;
-}
+    "+" => new Addition(nb1, nb2),
+    "-" => new Soustraction(nb1, nb2),
+    "*" => new Multiplication(nb1, nb2),
+    "/" => new Division(nb1, nb2),
+    "%" => new Modulo(nb1, nb2),
+    _ => null
+};
+
+
+
 if (operation is not null)
 {
     Calculatrice Calc = new Calculatrice(operation);
