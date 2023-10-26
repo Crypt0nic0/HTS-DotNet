@@ -31,25 +31,23 @@ int nb2 = GetIntValue("deuxième");
 Console.WriteLine("Saisir un opérateur entre + - * / %");
 string? op = Console.ReadLine();
 
-Operation? operation = op switch
+try
 {
-    "+" => new Addition(nb1, nb2),
-    "-" => new Soustraction(nb1, nb2),
-    "*" => new Multiplication(nb1, nb2),
-    "/" => new Division(nb1, nb2),
-    "%" => new Modulo(nb1, nb2),
-    _ => null
-};
+    Operation operation = op switch
+    {
+        "+" => new Addition(nb1, nb2),
+        "-" => new Soustraction(nb1, nb2),
+        "*" => new Multiplication(nb1, nb2),
+        "/" => new Division(nb1, nb2),
+        "%" => new Modulo(nb1, nb2),
+        _ => throw new OperateurNonReconnuException()
+    };
 
-
-
-if (operation is not null)
-{
     Calculatrice Calc = new Calculatrice(operation);
     Calc.Executer();
     Console.WriteLine($"Résultat de l'opération {Calc.Operation.ToString()} = {Calc.Operation.Resultat}");
 }
-else
+catch
 {
     Console.WriteLine($"L'opérateur {op} n'est pas reconnu");
 }
