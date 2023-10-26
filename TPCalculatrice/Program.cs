@@ -28,26 +28,37 @@ Console.WriteLine("Salut et bienvenu dans le TP Calculatrice");
 
 int nb1 = GetIntValue("première");
 int nb2 = GetIntValue("deuxième");
-Console.WriteLine("Saisir un opérateur entre + - * / %");
-string? op = Console.ReadLine();
 
 try
 {
-    Operation operation = op switch
+    Console.WriteLine("Saisir un opérateur entre + - * / %");
+    string? op = Console.ReadLine();
+    if (op is null)
     {
-        "+" => new Addition(nb1, nb2),
-        "-" => new Soustraction(nb1, nb2),
-        "*" => new Multiplication(nb1, nb2),
-        "/" => new Division(nb1, nb2),
-        "%" => new Modulo(nb1, nb2),
-        _ => throw new OperateurNonReconnuException()
-    };
+        Console.WriteLine("Aucun opérateur saisi");
+    }
+    else
+    {
+        Operation operation = op switch
+        {
+            "+" => new Addition(nb1, nb2),
+            "-" => new Soustraction(nb1, nb2),
+            "*" => new Multiplication(nb1, nb2),
+            "/" => new Division(nb1, nb2),
+            "%" => new Modulo(nb1, nb2),
+            _ => throw new OperateurNonReconnuException(op)
+        };
 
-    Calculatrice Calc = new Calculatrice(operation);
-    Calc.Executer();
-    Console.WriteLine($"Résultat de l'opération {Calc.Operation.ToString()} = {Calc.Operation.Resultat}");
+        Calculatrice Calc = new Calculatrice(operation);
+        Calc.Executer();
+        Console.WriteLine($"Résultat de l'opération {Calc.Operation.ToString()} = {Calc.Operation.Resultat}");
+    }
 }
-catch
+catch (OperateurNonReconnuException e)
 {
-    Console.WriteLine($"L'opérateur {op} n'est pas reconnu");
+    Console.WriteLine(e.Message);
+}
+catch (Exception e)
+{
+    Console.WriteLine($"Erreur générale : {e.Message}");
 }
